@@ -1,0 +1,161 @@
+body{
+    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background: black;
+}
+#container-imagem{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: url('./papel\ parede.jpg');
+}
+.conteudo{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 55px;
+    border-radius: 12px;
+}
+.topo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.topo input{
+    width: 350px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid white;
+    outline: none;
+    font-size: 1.2rem;
+    background: rgb(78, 77, 77);
+    color: white;
+}
+.topo button{
+    width: 45px;
+    border-radius: 12px;
+    border: 1px solid white;
+    background: rgb(78, 77, 77);
+    color: white;
+    outline: none;
+}
+.topo button:hover{
+    background: #5e5c5c;
+    cursor: pointer;
+}
+#ListaTarefas{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#ListaTarefas li{
+    padding: 20px;
+    background: rgb(51, 50, 50);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid white;
+}
+.btnAcao{
+    border-radius: 20px;
+    border: 1px solid rgb(145, 141, 141);
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    cursor: pointer;
+    background: #9c9a9a;
+    outline: none;
+}
+.btnAcao:hover{
+    background: rgb(78, 77, 77);
+}
+.textoTarefa{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290px;
+    white-space: nowrap;
+}
+#janelaEdicao{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: rgb(78, 77, 77);
+    border: 1px solid white;
+    width: 415px;
+    border-radius: 12px;
+    z-index: 200;
+    display: none;
+}
+#janelaEdicao.abrir{
+    display: block !important;
+}
+#janelaEdicaoBtnFechar{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 12%;
+    border: 1px solid white;
+    background-color: rgb(78, 77, 77);
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+#janelaEdicaoFundo{
+    position: fixed;
+    top: 0;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    right: 0;
+    display: none;
+}
+#janelaEdicaoFundo.abrir {
+    display: block !important;
+}
+form{
+    width: 100%;
+    margin-top: 20px;
+}
+.frm-linha{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.frm-linha label {
+    margin-bottom: 7px;
+}
+.frm-linha input {
+    padding: 15px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid white;
+    font-size: 1.2rem;
+    background: rgb(51, 50, 50);
+    color: white;
+}
+.frm-linha button{
+    background: rgb(51, 50, 50);
+    border: 1px solid white;
+    padding: 7px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    height: 50px;    
+    font-size: 1.2rem;
+    outline: none;
+}
+.frm-linha button:hover{
+    background: rgb(78, 77, 77);
+}
